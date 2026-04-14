@@ -46,10 +46,10 @@ export default function HeroSection() {
                 />
                 Download APK
               </a>
-              <button className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3">
+              {/* <button className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3">
                 Open Web App
                 <ArrowRight size={20} />
-              </button>
+              </button> */}
             </div>
             <div className="mt-8 flex items-center gap-4 text-sm text-slate-500">
               <div className="flex -space-x-2">
@@ -62,7 +62,7 @@ export default function HeroSection() {
               </div>
               <p>
                 Joined by{" "}
-                <span className="font-bold text-slate-900">2,000+</span>{" "}
+                <span className="font-bold text-slate-900">1,000+</span>{" "}
                 students this semester
               </p>
             </div>
