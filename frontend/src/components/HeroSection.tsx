@@ -1,7 +1,15 @@
-import { ArrowRight, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { motion } from "motion/react";
 import { APK_DOWNLOAD_URL, APP_VERSION } from "../constants";
 import PreviewCard from "./PreviewCard";
+import SafeImage from "./SafeImage";
+
+const studentAvatars = [
+  "https://i.pravatar.cc/100?img=11",
+  "https://i.pravatar.cc/100?img=32",
+  "https://i.pravatar.cc/100?img=47",
+  "https://i.pravatar.cc/100?img=56",
+];
 
 export default function HeroSection() {
   return (
@@ -53,10 +61,14 @@ export default function HeroSection() {
             </div>
             <div className="mt-8 flex items-center gap-4 text-sm text-slate-500">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((item) => (
-                  <div
-                    key={item}
-                    className="w-8 h-8 rounded-full border-2 border-white bg-slate-200"
+                {studentAvatars.map((avatar, index) => (
+                  <SafeImage
+                    key={avatar}
+                    src={avatar}
+                    alt={`Student ${index + 1} avatar`}
+                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
+                    fallbackClassName="w-8 h-8 rounded-full border-2 border-white bg-slate-200"
+                    fallbackLabel={`S${index + 1}`}
                   />
                 ))}
               </div>
@@ -109,6 +121,7 @@ export default function HeroSection() {
                 title="Cafeteria Lines 😤"
                 content="Why are the lines so long today? I've been waiting for 30 mins just for some shiro..."
                 author="Anonymous"
+                avatarSrc="https://i.pravatar.cc/100?img=3"
               />
             </motion.div>
             <motion.div
@@ -121,6 +134,7 @@ export default function HeroSection() {
                 title="Tech Meetup 2024"
                 content="Join us at the Main Hall for a deep dive into React Native and AI. Free snacks!"
                 author="Tech Club"
+                avatarSrc="https://i.pravatar.cc/100?img=65"
               />
             </motion.div>
           </motion.div>
