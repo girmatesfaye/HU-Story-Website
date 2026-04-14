@@ -18,7 +18,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 text-slate-400">
             <a
-              href="#"
+              href="https://www.tiktok.com/@girma_thoughts"
               className="hover:text-brand-600 transition-colors p-2 bg-white rounded-full border border-slate-100 shadow-sm"
               aria-label="TikTok"
             >
@@ -32,7 +32,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://t.me/girma_thoughts"
               className="hover:text-brand-600 transition-colors p-2 bg-white rounded-full border border-slate-100 shadow-sm"
               aria-label="Telegram"
             >
