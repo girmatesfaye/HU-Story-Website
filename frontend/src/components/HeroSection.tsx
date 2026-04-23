@@ -1,6 +1,6 @@
-import { Download } from "lucide-react";
+import { Download, Play } from "lucide-react";
 import { motion } from "motion/react";
-import { APK_DOWNLOAD_URL, APP_VERSION } from "../constants";
+import { APK_DOWNLOAD_URL, APP_VERSION, YOUTUBE_DEMO_URL } from "../constants";
 import PreviewCard from "./PreviewCard";
 import SafeImage from "./SafeImage";
 
@@ -54,10 +54,15 @@ export default function HeroSection() {
                 />
                 Download APK
               </a>
-              {/* <button className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3">
-                Open Web App
-                <ArrowRight size={20} />
-              </button> */}
+              <a
+                href={YOUTUBE_DEMO_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3"
+              >
+                View demo video
+                <Play size={20} />
+              </a>
             </div>
             <div className="mt-8 flex items-center gap-4 text-sm text-slate-500">
               <div className="flex -space-x-2">
