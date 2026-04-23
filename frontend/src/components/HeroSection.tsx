@@ -58,7 +58,7 @@ export default function HeroSection() {
                 href={YOUTUBE_DEMO_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3"
+                className="bg-white hover:bg-slate-50 text-red-400 border border-slate-200 px-8 py-4 rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3"
               >
                 View demo video
                 <Play size={20} />
