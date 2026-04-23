@@ -1,5 +1,6 @@
 import { Download } from "lucide-react";
 import { APK_DOWNLOAD_URL, APP_NAME } from "../constants";
+import appIcon from "../assets/images/app-icon.png";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img
-            src="./assets/images/app-icon.png"
+            src={appIcon}
             alt="HU Story logo"
             className="w-8 h-8 rounded-lg object-cover"
           />
