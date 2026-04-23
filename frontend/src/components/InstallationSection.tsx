@@ -58,7 +58,7 @@ export default function InstallationSection() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-500">File Size</span>
-                  <span className="font-bold text-slate-900">12.4 MB</span>
+                  <span className="font-bold text-slate-900">100.4 MB</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-500">Compatibility</span>
@@ -66,7 +66,7 @@ export default function InstallationSection() {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-500">Last Updated</span>
-                  <span className="font-bold text-slate-900">April 2024</span>
+                  <span className="font-bold text-slate-900">April 2026</span>
                 </div>
               </div>
               <a
