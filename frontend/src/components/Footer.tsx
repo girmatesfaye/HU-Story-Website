@@ -1,20 +1,27 @@
 import { APP_NAME } from "../constants";
-
+import appIcon from "../assets/images/app-icon.png";
 export default function Footer() {
   return (
     <footer className="bg-slate-50 py-8 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-brand-600 rounded flex items-center justify-center text-white font-black text-sm">
-              H
+            <div className="flex items-center gap-2">
+              <img
+                src={appIcon}
+                alt="HU Story logo"
+                className="w-8 h-8 rounded-lg object-cover"
+              />
+              <span className="font-bold text-xl tracking-tight text-slate-900">
+                {APP_NAME}
+              </span>
             </div>
             <span className="font-bold text-lg tracking-tight text-slate-900">
               {APP_NAME}
             </span>
           </div>
           <p className="text-slate-500 text-xs text-center md:text-left">
-            © 2024 HU Story Community. Built for students, by students.
+            © 2026 HU Story Community. Built for students, by students.
           </p>
           <div className="flex gap-4 text-slate-400">
             <a
@@ -35,6 +42,20 @@ export default function Footer() {
               href="https://t.me/girma_thoughts"
               className="hover:text-brand-600 transition-colors p-2 bg-white rounded-full border border-slate-100 shadow-sm"
               aria-label="Telegram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.25.38-.51 1.05-.78 4.12-1.79 6.87-2.97 8.24-3.55 3.93-1.64 4.74-1.92 5.27-1.93.12 0 .38.03.55.17.14.12.18.28.2.45.02.12.02.25.01.38z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.youtube.com/@GirmaThoughts"
+              className="hover:text-brand-600 transition-colors p-2 bg-white rounded-full border border-slate-100 shadow-sm"
+              aria-label="Youtube"
             >
               <svg
                 viewBox="0 0 24 24"
